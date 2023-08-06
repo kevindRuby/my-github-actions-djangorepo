@@ -1,17 +1,12 @@
+---
 name: Django Tests
-
 on:
   push:
-    branches: - main
-
+    branches: -main
   pull_request:
-    branches: - main
-# on:
-#   schedule:
-#     -cron: '*/15 * * * *'
-
+    branches: -main
 job:
-  build:
+  build: null
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
