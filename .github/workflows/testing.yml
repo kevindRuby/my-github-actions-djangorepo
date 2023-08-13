@@ -16,6 +16,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+     defaults:
+      run:
+        working-directory: mycicdprojPROJ
+            
 
     steps:
       - uses: actions/checkout@v2
@@ -33,11 +37,11 @@ jobs:
           flake8 --ignore=W191,E501
       - name: Coverage report
         run: |
-          cd mycicdprojPROJ
+# cd mycicdprojPROJ
           pip install coverage
           coverage run manage.py test
           coverage report
       - name: Django Testing
         run: |
-          cd mycicdprojPROJ
+# cd mycicdprojPROJ
           python3 manage.py test
