@@ -39,4 +39,5 @@ jobs:
           coverage report
       - name: Django Testing
         run: |
+          cd mycicdprojPROJ
           python3 manage.py test
