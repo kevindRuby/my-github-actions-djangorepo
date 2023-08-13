@@ -3,7 +3,7 @@ coverage==7.2.7
 Django==3.2.20
 flake8==5.0.4
 mccabe==0.7.0
-pycodestyle==2.10.0
+pycodestyle==2.9.0
 pyflakes==3.0.1
 sqlparse==0.4.4
 typing_extensions==4.7.1
