@@ -34,9 +34,9 @@ jobs:
       - name: Change directory and run tests with Coverage report
         run: |
           pip install coverage
-          cd mycicdprojAPP
+          cd .. 
           coverage run manage.py test
-          coverage report
+
       - name: Django Testing
         run: |
           python3 manage.py test
