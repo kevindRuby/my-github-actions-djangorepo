@@ -37,11 +37,11 @@ jobs:
           flake8 --ignore=W191,E501
       - name: Coverage report
         run: |
-          # cd mycicdprojPROJ
+          # cd mycicdprojPROJ COMMENTED OUT
           pip install coverage
           coverage run manage.py test
           coverage report
       - name: Django Testing
         run: |
-          # cd mycicdprojPROJ
+          # cd mycicdprojPROJ COMMENTED OUT
           python3 manage.py test
