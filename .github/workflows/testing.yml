@@ -17,7 +17,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
-      run: |
+      run:
         working-directory: mycicdprojPROJ
             
 
