@@ -33,7 +33,7 @@ jobs:
           flake8 --ignore=W191,E501
       - name: Coverage report
         run: |
-          working-directory: ./mycicdprojPROJ
+          ls -la
           pip install coverage
           coverage run manage.py test
           coverage report
