@@ -31,9 +31,10 @@ jobs:
         run: |
           pip install flake8
           flake8 --ignore=W191,E501
-      - name: Coverage report
+      - name: Change directory and run tests with Coverage report
         run: |
           pip install coverage
+          cd mycicdprojAPP
           coverage run manage.py test
           coverage report
       - name: Django Testing
