@@ -1,5 +1,5 @@
 name: Django Tests
-#
+
 on:
   push:
     branches:
@@ -31,11 +31,12 @@ jobs:
         run: |
           pip install flake8
           flake8 --ignore=W191,E501
-      # - name: Coverage report
-      #   run: |
-      #     pip install coverage
-      #     coverage run manage.py test
-      #     coverage report
+      - name: Coverage report
+        run: |
+          working-directory: ./mycicdprojPROJ
+          pip install coverage
+          coverage run manage.py test
+          coverage report
       - name: Django Testing
         run: |
-          python manage.py test
+          python3 manage.py test
